@@ -1,0 +1,39 @@
+### Get a specific project via id
+GET http://localhost:8000/api/projects/125
+Accept: application/json
+
+### Create a new project
+POST http://localhost:8000/api/projects/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Create a Slackbot to monitor student question",
+  "description": "Slackbot is so last year",
+  "completed": false
+}
+
+### Update a project by id
+PUT http://localhost:8000:/api/projects/22
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Create a Slackbot to monitor student question",
+  "description": "Slackbot is awesome",
+  "completed": true
+}
+
+### Delete a project by id
+DELETE http://localhost:8000:/api/projects/2
+Accept: application/json
+
+###
+
+
+
+
+
+
+
+

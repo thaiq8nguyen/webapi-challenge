@@ -1,0 +1,39 @@
+
+GET http://localhost:8000/api/actions/125
+Accept: application/json
+
+### Get request with parameter
+POST http://localhost:8000/api/actions/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "project_id": 1,
+  "description": "Create a Trello Board",
+  "notes": "none",
+  "completed": false
+}
+
+### Put request
+PUT http://localhost:8000:/api/actions/2
+Accept: application/json
+Content-Type: application/json
+
+{
+"project_id": 2,
+"description": "Gathering information from group until noon at 12PM",
+"notes": "none",
+"completed": true
+}
+
+### Delete request
+DELETE http://localhost:8000:/api/actions/2
+Accept: application/json
+
+
+
+
+
+
+
+
